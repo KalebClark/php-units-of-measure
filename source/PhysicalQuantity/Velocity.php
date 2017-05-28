@@ -34,6 +34,13 @@ class Velocity extends AbstractPhysicalQuantity
         $newUnit->addAlias('feet per second');
         static::addUnit($newUnit);
 
+        // inch per second
+        $newUnit = UnitOfMeasure::linearUnitFactory('in/s', 0.0254);
+        $newUnit->addAlias('inch/sec');
+        $newUnit->addAlias('inche per second');
+        $newUnit->addAlias('ips');
+        static::addUnit($newUnit);
+
         // miles per hour
         $newUnit = UnitOfMeasure::linearUnitFactory('mph', 0.44704);
         $newUnit->addAlias('miles/hour');
