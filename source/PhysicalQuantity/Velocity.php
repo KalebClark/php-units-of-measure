@@ -37,7 +37,7 @@ class Velocity extends AbstractPhysicalQuantity
         // inch per second
         $newUnit = UnitOfMeasure::linearUnitFactory('in/s', 0.0254);
         $newUnit->addAlias('inch/sec');
-        $newUnit->addAlias('inche per second');
+        $newUnit->addAlias('inches per second')
         $newUnit->addAlias('ips');
         static::addUnit($newUnit);
 
